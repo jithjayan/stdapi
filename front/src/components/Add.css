@@ -1,0 +1,30 @@
+
+
+input[type=text],input[type=number],input[type=email], select {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+  .sbtn{
+    background-color: rgb(25, 165, 60);
+    color: white;
+    width: 100%;
+  }
+  .sbtn:hover{
+    background-color: rgb(121, 228, 135);
+  }
+
+  .sbtn2{
+    background-color: rgb(25, 165, 60);
+    color: white;
+    width: 100%;
+  }
+
+.sbtn2:hover{
+    background-color: rgb(121, 228, 135);
+}

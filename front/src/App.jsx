@@ -1,5 +1,5 @@
 import Student from "./components/Student"
-import "./app.css"
+import "./App.css"
 
 function App(){
   return(

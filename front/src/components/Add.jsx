@@ -1,6 +1,6 @@
 import {useState } from "react"
 import axios from 'axios'
-
+import "./Add.css"
 function Add(){
     const [roll_no,setRoll_no]=useState('')
     const [name,setName]=useState('')
@@ -21,13 +21,13 @@ function Add(){
 }
 
     return(
-            <form onSubmit={handleSubmit} className="form">
+            <form onSubmit={handleSubmit} className="frm" >
                 <input type="text" name="roll_no" id="roll_no" value={roll_no} placeholder="Roll no" onChange={(e)=>setRoll_no(e.target.value)} />
                 <input type="text" name="name" id="name" value={name} placeholder="Name" onChange={(e)=>setName(e.target.value)} />
                 <input type="text" name="age" id="age" value={age} placeholder="Age" onChange={(e)=>setAge(e.target.value)} />
                 <input type="text" name="email" id="email" value={email} placeholder="Email" onChange={(e)=>setEmail(e.target.value)} />
                 <input type="text" name="ph" id="ph" value={ph}  placeholder="Phone" onChange={(e)=>setPh(e.target.value)} />
-                <input type="submit" value="add"  className="btn btn-outline-primary"/>
+                <input type="submit" value="ADD STUDENT"  className="btn sbtn" />
             </form>
     )
 }

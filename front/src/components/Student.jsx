@@ -3,6 +3,7 @@
 import { useEffect, useState } from "react"
 import axios from 'axios'
 import Add from "./Add"
+import "./Add.css"
 
 function Student(){
     const [data,setData]=useState([])
@@ -61,7 +62,6 @@ function Student(){
                 ))}
             </tbody>
         </table>
-        
         {editing ? <EditForm curTask={editStudents} updatetask={updateStudents}/>:<Add/>}
         </div>
         </>
@@ -86,8 +86,8 @@ const EditForm=({curTask,updatetask})=>{
             <input type="text" name="name" id="name" value={task.name} onChange={handleChange}/>
             <input type="number" name="age" id="age" value={task.age} onChange={handleChange}/>
             <input type="email" name="email" id="email" value={task.email} onChange={handleChange}/>
-            <input type="number" name="phone" id="phone" value={task.ph} onChange={handleChange}/>
-            <input type="submit" value="update" className="btn btn-outline-primary" />
+            <input type="number" name="ph" id="ph" value={task.ph} onChange={handleChange}/>
+            <input type="submit" value="update" className="btn sbtn2" />
         </form>
         </>
     )
